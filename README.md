@@ -14,3 +14,6 @@ sudo chmod a+rw /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
 rosrun rosserial_python serial_node.py /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
 #5.ros client 쏘기
 rosrun tutorial_package server_arduino
+
+# bashrc alias 
+alias ardu_go='sudo chmod a+rw /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0 && rosrun rosserial_python serial_node.py /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0' 
