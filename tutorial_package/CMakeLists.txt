@@ -154,9 +154,9 @@ add_executable(my_sub_node src/my_sub_node.cpp)
 add_dependencies(my_sub_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(my_sub_node ${catkin_LIBRARIES})
 
-add_executable(server_arduino src/server_arduino.cpp)
-add_dependencies(server_arduino ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(server_arduino ${catkin_LIBRARIES})
+add_executable(arduino_client src/arduino_client.cpp)
+add_dependencies(arduino_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(arduino_client ${catkin_LIBRARIES})
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context

@@ -13,7 +13,7 @@ int main(int argc, char** argv){
 	
 	//while(ros::ok()){
 	my_msgs::ReqRes srv;
-	srv.request.input = "3";
+	srv.request.input = argv[1];
 
 	if(client.call(srv))
 	{
